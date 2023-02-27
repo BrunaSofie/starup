@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-image: url(https://images.unsplash.com/photo-1663497590577-e794538273ea?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDM5fGJvOGpRS1RhRTBZfHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=400&q=60);
+        background-size: cover;
+      }
+      h2 {
+        color: #226666;
+        text-align: center;
+        border: 5px solid #669999;
+        cursor: pointer;
+      }
+      li {
+        list-style: none;
+        display: inline-block;
+      }
+      p {
+        color: blueviolet;
+        text-decoration: underline;
+        text-transform: uppercase;
+        line-height: 20px;
+        font-style: italic;
+        font-weight: bold;
+        font-size: 110%;
+        font-family: Georgia, "Times New Roman", Times, serif;
+      }
+      .webtext:last-child {
+        border: 5px dashed green;
+      }
+      .active {
+        color: red;
+      }
+      #div1 {
+        background: rgba(136, 45, 96, 0.3);
+      }
+      #div2 {
+        background: rgba(170, 85, 133, 0.3);
+      }
+      img {
+        float: right;
+      }
+      footer {
+        clear: both;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li>Home</li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="login.html">Login</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section>
+      <h2>Home</h2>
+      <img
+        src="https://images.unsplash.com/photo-1673454753170-83c796e48bd5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHx0b3BpYy1mZWVkfDF8NnNNVmpUTFNrZVF8fGVufDB8fHx8&auto=format&fit=crop&w=400&q=60"
+        width="300px"
+        height="300px"
+      />
+      <div id="div1">
+        <p class="webtext active">Lorem ipsum.</p>
+        <p class="webtext">Lorem ipsum.</p>
+      </div>
+      <div id="div2">
+        <p class="webtext active">Lorem ipsum.</p>
+        <p class="webtext">Lorem ipsum.</p>
+      </div>
+    </section>
+    <footer>Website made with love</footer>
+  </body>
+</html>
