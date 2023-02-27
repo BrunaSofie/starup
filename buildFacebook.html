@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style></style>
+  </head>
+  <body>
+    <script>
+      var database = [
+        {
+          username: "Andrei",
+          password: "supersecret",
+        },
+      ];
+      var newsFeed = [
+        {
+          username: "Bobby",
+          timeline: "So tired from all that learning",
+        },
+        { username: "Sally", timeline: "JavaScript is so cool" },
+      ];
+      var userNamePrompt = prompt("What´s your username?");
+      var passwordPrompt = prompt("What´s your password?");
+
+      function signIn(user, pass) {
+        if (user === database[0].username && pass === database[0].password) {
+          console.log(newsFeed);
+        } else {
+          alert("Sorry, wrong username and password");
+        }
+      }
+      signIn(userNamePrompt, passwordPrompt);
+    </script>
+  </body>
+</html>
